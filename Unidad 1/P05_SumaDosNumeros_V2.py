@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import uic, QtWidgets
-qtCreatorFile = "P04_SumaDosNumeros_v2.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P05_SumaDosNumeros_V2.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -16,7 +16,8 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             a = float(self.txt_A.text())
             b = float(self.txt_B.text())
             r = a+b
-            self.msj("La suma es: " + str(r))
+            #self.msj("La suma es: " + str(r))
+            self.txt_resultado.setText(str(r))
         except Exception as error:
             print(error)
 
@@ -32,3 +33,4 @@ if __name__ == "__main__":
     window = MyApp()
     window.show()
     sys.exit(app.exec_())
+
