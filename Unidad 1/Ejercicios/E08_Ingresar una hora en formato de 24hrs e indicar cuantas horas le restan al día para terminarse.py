@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 class VentanaPrincipal(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('ventana.ui', self)
+        uic.loadUi("E08_Ingresar una hora en formato de 24hrs e indicar cuantas horas le restan al día para terminarse.ui", self)
         self.boton_calcular.clicked.connect(self.calcular_horas_restantes)
 
     def calcular_horas_restantes(self):

@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 class Ventana2(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('ventana2.ui', self)
+        uic.loadUi("E07_Contar la cantidad de caracteres de una cadena.ui", self)
         self.boton_contar.clicked.connect(self.contar_caracteres)
 
     def contar_caracteres(self):
