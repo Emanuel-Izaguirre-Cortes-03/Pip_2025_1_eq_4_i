@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="logos">
+    <file>images.png</file>
+    <file>Escudo UAT.png</file>
+    <file>UAT isotipo.png</file>
+  </qresource>
+</RCC>
