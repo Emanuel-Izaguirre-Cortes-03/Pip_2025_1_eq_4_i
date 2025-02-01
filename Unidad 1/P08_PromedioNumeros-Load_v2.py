@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import uic, QtWidgets
-qtCreatorFile = "P08_PromedioNumeros-Load_v2.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P08_PromedioNumeros-Load_V2.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -26,12 +26,13 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.promedio()
         #TAREA EJ 12.--- ASEGURARSE DE QUE SOLO SE PUEDA CARGAR HASTA ANTES DE
         # AGREGAR LA PRIMERA CALIFICACION ... ---> ENABLES Y/O CODIGO
+        self.txt_lista_calificaciones.setText(str(self.calificaciones))
 
     def agregar(self):
         calificacion = int(self.txt_calificacion.text())
         self.calificaciones.append(calificacion)
         self.promedio()
-
+        self.txt_lista_calificaciones.setText(str(self.calificaciones))
 
     def promedio(self):
         prom = sum(self.calificaciones) / len(self.calificaciones)
@@ -56,3 +57,4 @@ if __name__ == "__main__":
     window = MyApp()
     window.show()
     sys.exit(app.exec_())
+

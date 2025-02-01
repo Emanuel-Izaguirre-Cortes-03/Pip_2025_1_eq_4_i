@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>743</width>
-    <height>554</height>
+    <width>594</width>
+    <height>452</height>
    </rect>
   </property>
   <property name="font">
@@ -25,16 +25,15 @@
    <widget class="QPushButton" name="btn_agregar">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>410</y>
-      <width>231</width>
-      <height>71</height>
+      <x>240</x>
+      <y>140</y>
+      <width>201</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>26</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -60,7 +59,6 @@ border: 5px solid blue;</string>
     <property name="font">
      <font>
       <pointsize>25</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -78,29 +76,28 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>90</y>
-      <width>221</width>
-      <height>31</height>
+      <x>50</x>
+      <y>110</y>
+      <width>131</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:696;&quot;&gt;Numero:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Calificacion:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txt_promedio">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>270</y>
-      <width>231</width>
-      <height>61</height>
+      <y>250</y>
+      <width>191</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>25</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -120,27 +117,26 @@ background-color: rgb(255, 255, 255);</string>
      <rect>
       <x>50</x>
       <y>220</y>
-      <width>171</width>
-      <height>31</height>
+      <width>131</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:696;&quot;&gt;suma:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Promedio:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_guardar">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>310</y>
-      <width>231</width>
-      <height>71</height>
+      <x>170</x>
+      <y>340</y>
+      <width>201</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>26</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -166,7 +162,6 @@ border: 5px solid blue;</string>
     <property name="font">
      <font>
       <pointsize>26</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -180,36 +175,31 @@ border: 5px solid blue;</string>
      <string>CARGAR</string>
     </property>
    </widget>
-   <widget class="QLabel" name="txt_lista">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>60</y>
-      <width>151</width>
-      <height>31</height>
+      <x>260</x>
+      <y>0</y>
+      <width>131</width>
+      <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
     <property name="text">
-     <string>Lista de numeros</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Calificaciones:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QTextEdit" name="txt_lista_calificaciones">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>100</y>
-      <width>241</width>
-      <height>71</height>
+      <x>310</x>
+      <y>30</y>
+      <width>221</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
+     <string notr="true">border-radius:20px;
+background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
   </widget>
@@ -218,8 +208,8 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>743</width>
-     <height>26</height>
+     <width>594</width>
+     <height>24</height>
     </rect>
    </property>
   </widget>

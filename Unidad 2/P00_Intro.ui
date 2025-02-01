@@ -33,14 +33,14 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>-200</x>
-      <y>-30</y>
-      <width>1101</width>
-      <height>511</height>
+      <x>50</x>
+      <y>60</y>
+      <width>831</width>
+      <height>411</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/logos/UAT isotipo.png);</string>
+     <string notr="true">background-image: url(:/logos/pintura-ondas-coloridas-abstractas_2560x1440_xtrafondos.com.jpg);</string>
     </property>
     <property name="text">
      <string/>
