@@ -6,44 +6,41 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>897</width>
-    <height>505</height>
+    <width>500</width>
+    <height>350</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>171</width>
-      <height>41</height>
+      <x>70</x>
+      <y>40</y>
+      <width>361</width>
+      <height>221</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Ejercicios/ImagenGatoEuropeo.png);</string>
+    </property>
     <property name="text">
-     <string>Background-image</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>60</y>
-      <width>831</width>
-      <height>411</height>
+      <x>60</x>
+      <y>10</y>
+      <width>121</width>
+      <height>16</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/logos/pintura-ondas-coloridas-abstractas_2560x1440_xtrafondos.com.jpg);</string>
-    </property>
     <property name="text">
-     <string/>
+     <string>Background-Image</string>
     </property>
    </widget>
   </widget>
@@ -52,8 +49,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>897</width>
-     <height>26</height>
+     <width>500</width>
+     <height>24</height>
     </rect>
    </property>
   </widget>

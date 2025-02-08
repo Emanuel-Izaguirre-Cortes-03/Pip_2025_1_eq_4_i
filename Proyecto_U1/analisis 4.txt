@@ -1,0 +1,7 @@
+Valor Menor: 1.0
+Valor Mayor: 79150.0
+Media: 11755.8545
+Mediana: 19.5
+Moda: 41.0
+Desviación Estándar: 22449.142776714096
+Varianza: 503964011.4092947
