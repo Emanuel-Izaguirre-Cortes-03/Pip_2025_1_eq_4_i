@@ -1,13 +1,10 @@
 <RCC>
-  <qresource prefix="logos">
-    <file>IMG-20240111-WA0016.jpg</file>
-    <file>DALL·E 2025-01-25 14.40.33 - An educational diagram illustrating the Network Layer (3rd layer) and Transport Layer (4th layer) of the OSI model. The Network Layer is represented b.webp</file>
-    <file>DALL·E 2025-01-25 14.49.15 - An illustration depicting different transmission media in a WAN network, such as fiber optic cables, wireless communication (Wi-Fi), satellite links, .webp</file>
-    <file>DALL·E 2025-01-25 14.58.46 - A visual representation of network protocols, showing TCP_IP and SNA. On the left, a diagram illustrating the transmission of packets in an IP-based n.webp</file>
-    <file>pintura-ondas-coloridas-abstractas_2560x1440_xtrafondos.com.jpg</file>
-    <file>windows-11-stock-official-blue-background-aesthetic-3840x2160-5777.jpg</file>
-    <file>images.png</file>
+  <qresource prefix="Recursos">
+    <file>Castor.jpg</file>
+    <file>facultad_ingenieria_tampico.png</file>
+    <file>UAT.png</file>
     <file>Escudo UAT.png</file>
-    <file>UAT isotipo.png</file>
+    <file>FI.png</file>
+    <file>UAT Vertical - copia.png</file>
   </qresource>
 </RCC>
