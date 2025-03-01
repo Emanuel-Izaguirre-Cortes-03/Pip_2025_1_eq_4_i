@@ -27,7 +27,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         valor=self.selectorImagen.value()
 
         imagen_ruta = self.datosImagenes[valor][0]
-        self.label_2.setPixmap(QtGui.QPixmap(imagen_ruta))
+        self.imagen_nombre.setPixmap(QtGui.QPixmap())
 
         imagen_nombre = self.datosImagenes[valor][1]
         self.txt_nombre_imagen.setText(imagen_nombre)

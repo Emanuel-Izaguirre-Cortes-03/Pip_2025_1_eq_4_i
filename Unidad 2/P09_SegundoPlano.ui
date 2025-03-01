@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>689</width>
-    <height>423</height>
+    <width>578</width>
+    <height>415</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>123</y>
-      <width>191</width>
-      <height>31</height>
+      <x>30</x>
+      <y>220</y>
+      <width>163</width>
+      <height>27</height>
      </rect>
     </property>
     <property name="font">
@@ -38,15 +38,15 @@
    <widget class="QLineEdit" name="txt_temporizador">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>163</y>
-      <width>271</width>
-      <height>51</height>
+      <x>11</x>
+      <y>272</y>
+      <width>376</width>
+      <height>80</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <pointsize>36</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -57,77 +57,64 @@ border-radius:10px</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>151</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/Escudo UAT.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>290</y>
-      <width>121</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/Logos/Castor.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>20</y>
-      <width>161</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/NLogos/Facultad.jpg);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/FI.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btn_temporizador">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>160</y>
-      <width>151</width>
-      <height>71</height>
+      <x>394</x>
+      <y>272</y>
+      <width>173</width>
+      <height>81</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 170, 255);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Iniciar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>161</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/UAT Vertical - copia.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/UAT.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -136,7 +123,7 @@ border-radius:10px</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>689</width>
+     <width>578</width>
      <height>26</height>
     </rect>
    </property>

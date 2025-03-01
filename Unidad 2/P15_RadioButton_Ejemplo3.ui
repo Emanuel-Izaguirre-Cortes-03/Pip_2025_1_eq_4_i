@@ -52,7 +52,7 @@ border-radius:10px</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/Escudo UAT.png</pixmap>
+     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/UAT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -74,7 +74,7 @@ border-radius:10px</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/FI.png</pixmap>
+     <pixmap resource="../Archivos/Recursos.qrc">:/Recursos/facultad_ingenieria_tampico.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

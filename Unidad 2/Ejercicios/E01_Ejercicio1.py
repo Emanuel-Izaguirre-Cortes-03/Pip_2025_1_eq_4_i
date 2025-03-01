@@ -1,12 +1,13 @@
 import sys
 from PyQt5 import uic, QtWidgets
 import Recursos_rc
+
 qtCreatorFile = "E01_Ejercicio1.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
+
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
-        QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow.__init__(self)
+        super().__init__()
         self.setupUi(self)
         # Área de los Signals
         self.btn_calcular.clicked.connect(self.calcular)
@@ -16,12 +17,12 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     # Área de los Slots
     def calcular(self):
         try:
-            num=float(self.txt_centigrados.text())
-            #Conversion
-            f=((num*9/5)+32)
-            self.txt_f.setText("{:.5f}".format(f))
+            num = float(self.txt_centigrados.text())
+            # Conversión
+            f = (num * 9 / 5) + 32
+            self.txt_farenheit.setText("{:.2f}".format(f))  # Asegura que sea el nombre correcto del objeto
         except ValueError:
-            self.msj("Error... Ingresa un valor numerico.")
+            self.msj("Error... Ingresa un valor numérico.")
 
     def reiniciar(self):
         self.txt_centigrados.clear()
