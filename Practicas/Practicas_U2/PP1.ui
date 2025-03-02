@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>80</y>
+      <x>90</x>
+      <y>240</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -35,8 +35,8 @@
    <widget class="QLineEdit" name="txt_nombre_imagen">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>120</y>
+      <x>100</x>
+      <y>290</y>
       <width>431</width>
       <height>51</height>
      </rect>
@@ -54,25 +54,6 @@ border-radius:10px</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>190</y>
-      <width>361</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/Castor.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
@@ -86,26 +67,7 @@ border-radius:10px</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/UAT.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>290</y>
-      <width>121</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/Castor.jpg</pixmap>
+     <pixmap resource="../../Archivos/Recursos.qrc">:/Recursos/UAT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -114,7 +76,7 @@ border-radius:10px</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>490</x>
       <y>20</y>
       <width>161</width>
       <height>61</height>
@@ -127,7 +89,7 @@ border-radius:10px</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/facultad_ingenieria_tampico.png</pixmap>
+     <pixmap resource="../../Archivos/Recursos.qrc">:/Recursos/facultad_ingenieria_tampico.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -136,8 +98,8 @@ border-radius:10px</string>
    <widget class="QSlider" name="selectorImagen">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>200</y>
+      <x>30</x>
+      <y>180</y>
       <width>22</width>
       <height>160</height>
      </rect>
@@ -150,13 +112,26 @@ border-radius:10px</string>
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>117</y>
+      <y>230</y>
       <width>131</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
      <string>Aceptar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>211</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
@@ -175,7 +150,6 @@ border-radius:10px</string>
  <resources>
   <include location="../../Archivos/Recursos.qrc"/>
   <include location="../../Archivos/Recursos.qrc"/>
-  <include location="../Desktop/PIP_2025_1_Eq_03/Archivos/Recursos.qrc"/>
  </resources>
  <connections/>
 </ui>

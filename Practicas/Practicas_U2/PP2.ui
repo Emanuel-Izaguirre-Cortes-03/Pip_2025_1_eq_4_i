@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>689</width>
-    <height>423</height>
+    <height>303</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -67,7 +67,7 @@ border-radius:10px</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/UAT.png</pixmap>
+     <pixmap>:/Logos/UAT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -86,7 +86,7 @@ border-radius:10px</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/Castor.jpg</pixmap>
+     <pixmap>:/Logos/Castor.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -108,7 +108,7 @@ border-radius:10px</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/facultad_ingenieria_tampico.png</pixmap>
+     <pixmap>:/Logos/facultad_ingenieria_tampico.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -155,7 +155,6 @@ border-radius:10px</string>
  </widget>
  <resources>
   <include location="../../Archivos/Recursos.qrc"/>
-  <include location="../../../Archivos/Recursos.qrc"/>
  </resources>
  <connections/>
 </ui>

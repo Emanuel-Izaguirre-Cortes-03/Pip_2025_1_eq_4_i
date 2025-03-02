@@ -1,79 +1,75 @@
-'''
-
-generar aleatoriamente en caja texto, nombre de imaegen, abajo imagen y slider , aceptar , si coincide la imagen y el texto correcto
-
-simular funcionamiento reloj 24 establecer hora manualmente
-'''
 import random
-from winreg import error
 import sys
 from PyQt5 import uic, QtWidgets, QtGui
-import recursos_rc
-qtCreatorFile = "PP1.ui"  # Nombre del archivo aquí.
+import Recursos_rc  # Asegúrate de que existe y compila bien
+
+qtCreatorFile = "PP1.ui"  # Nombre del archivo .ui
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
+
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
-        QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow.__init__(self)
+        super().__init__()
         self.setupUi(self)
-        # Área de los Signals
+
+        # Configuración del QSlider
         self.selectorImagen.valueChanged.connect(self.cambiaValor)
         self.selectorImagen.setMinimum(0)
         self.selectorImagen.setMaximum(2)
         self.selectorImagen.setSingleStep(1)
         self.selectorImagen.setValue(0)
 
+        # Botón para verificar
         self.btn_aceptar.clicked.connect(self.Verificar)
 
-
-        #label_2
-        self.datosImagenes={
-        0: [":/Logos/UAT.png", "UAT"],
-        1: [":/Logos/Castor.jpg", "Castor programador"],
-        2: [":/Logos/facultad_ingenieria_tampico.png", "La facultad de ingenieria..."],
+        # Diccionario con rutas e identificadores
+        self.datosImagenes = {
+            0: [":/Logos/UAT.png", "UAT"],
+            1: [":/Logos/Castor.jpg", "Castor programador"],
+            2: [":/Logos/facultad_ingenieria_tampico.png", "La facultad de ingeniería..."],
         }
+
         self.cambiaValor()
-        self.random()
+        self.seleccionAleatoria()
 
-
-    # Área de los Slots
     def cambiaValor(self):
-        valor=self.selectorImagen.value()
-
+        """Actualiza la imagen según la posición del slider."""
+        valor = self.selectorImagen.value()
         self.ruta_imagen = self.datosImagenes[valor][0]
-        self.label_2.setPixmap(QtGui.QPixmap(self.ruta_imagen))
 
-        #imagen_nombre = self.datosImagenes[valor][1]
-        #self.txt_nombre_imagen.setText(imagen_nombre)
+        pixmap = QtGui.QPixmap(self.ruta_imagen)
+        if not pixmap.isNull():
+            self.label_2.setPixmap(QtGui.QPixmap(r"C:\Users\Emanu\Documents\Pip_2025_1_eq_4_i\Logos\UAT.png"))
 
-        #print(f"Imagen: {imagen_nombre}, Índice: {valor}")
+            self.label_2.setScaledContents(True)  # Ajusta la imagen al QLabel
+        else:
+            print(f"Error: No se pudo cargar la imagen {self.ruta_imagen}")
 
     def Verificar(self):
+        """Verifica si el texto ingresado coincide con la descripción de la imagen."""
         try:
             texto = self.txt_nombre_imagen.text()
-            if self.ruta_imagen == texto:
+            if self.datosImagenes[self.selectorImagen.value()][1] == texto:
                 self.msj("Bien", "Es correcto")
-                self.random()
+                self.seleccionAleatoria()
             else:
                 self.msj("Mal", "Es incorrecto")
-        except error:
-            print(error)
+        except Exception as e:
+            print(e)
 
-
-    def random(self):
+    def seleccionAleatoria(self):
+        """Selecciona aleatoriamente una imagen y actualiza el slider y el texto."""
         n = random.choice(list(self.datosImagenes.keys()))
         texto = self.datosImagenes[n][1]
         self.txt_nombre_imagen.setText(texto)
         self.selectorImagen.setValue(n)
 
-
     def msj(self, title, txt):
+        """Muestra un QMessageBox informativo."""
         m = QtWidgets.QMessageBox()
         m.setIcon(QtWidgets.QMessageBox.Information)
         m.setWindowTitle(title)
         m.setText(txt)
         m.exec_()
-
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

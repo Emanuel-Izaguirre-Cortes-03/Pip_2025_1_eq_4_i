@@ -1,25 +1,30 @@
 import sys
-import recursos_rc
-from PyQt5 import uic, QtWidgets, QtGui,QtCore
-qtCreatorFile = "PP2.ui"  # Nombre del archivo aquí.
-Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
+import Recursos_rc
+from PyQt5 import QtWidgets, QtCore
+from PP2_ui import Ui_MainWindow  # Importamos la interfaz corregida
+
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
-        QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow.__init__(self)
+        super().__init__()
         self.setupUi(self)
 
-        self.btn_temporizador.clicked.connect(self.iniciarTempo)
-
+        # Inicialización del temporizador y variable de tiempo
+        self.tiempo_transcurrido = 0
         self.segundoPlano = QtCore.QTimer()
         self.segundoPlano.timeout.connect(self.temporizadorV2)
 
+        # Conectar botón a la función para iniciar el temporizador
+        self.btn_temporizador.clicked.connect(self.iniciarTempo)
+
     def iniciarTempo(self):
-       pass
+        """Inicia el temporizador y reinicia el contador."""
+        self.tiempo_transcurrido = 0  # Reinicia el contador de tiempo
+        self.segundoPlano.start(1000)  # Configura el temporizador para que se ejecute cada 1 segundo
 
     def temporizadorV2(self):
-        pass
-
+        """Actualiza el temporizador cada segundo."""
+        self.tiempo_transcurrido += 1
+        self.label_tiempo.setText(f"Tiempo: {self.tiempo_transcurrido} s")
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
