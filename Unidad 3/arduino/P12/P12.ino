@@ -32,8 +32,6 @@ void prenderled() {
   delay(100);
   digitalWrite(led1,0); 
 
-
- 
 }
 
 void setup() {
@@ -55,9 +53,6 @@ void loop() {
     prenderled();  // Se ejecuta la secuencia antes de encender un LED
     digitalWrite(v, 1); // Enciende el LED recibido por Serial
  
-
-    
-
   }
   delay(100);
 }

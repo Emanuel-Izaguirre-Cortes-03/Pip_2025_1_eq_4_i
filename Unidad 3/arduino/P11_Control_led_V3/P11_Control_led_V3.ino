@@ -27,8 +27,6 @@ void loop() {
     v=Serial.readString().toInt();
     apagaleds();
     digitalWrite(v,1);
-    
-
 }
  delay(100);
 }
