@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="recursos2">
+    <file>Proyecto_Integrador/logo_derecho.png</file>
+    <file>Proyecto_Integrador/logo_izquierdo.png</file>
+  </qresource>
+</RCC>
