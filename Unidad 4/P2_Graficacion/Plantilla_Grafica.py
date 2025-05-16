@@ -10,9 +10,11 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FiguraCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as BarraNavegacion
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -85,13 +87,15 @@ class Ui_MainWindow(object):
         self.btn_limpiar.setObjectName("btn_limpiar")
         self.line = QtWidgets.QFrame(self.centralwidget)
         self.line.setGeometry(QtCore.QRect(410, 40, 131, 16))
+        self.line.setLineWidth(4)
         self.line.setFrameShape(QtWidgets.QFrame.HLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
         self.line_2 = QtWidgets.QFrame(self.centralwidget)
         self.line_2.setGeometry(QtCore.QRect(390, 10, 20, 141))
+        self.line_2.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.line_2.setLineWidth(3)
         self.line_2.setFrameShape(QtWidgets.QFrame.VLine)
-        self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setGeometry(QtCore.QRect(410, 60, 231, 21))
@@ -137,6 +141,7 @@ class Ui_MainWindow(object):
         self.sp_anchoLinea.setObjectName("sp_anchoLinea")
         self.line_3 = QtWidgets.QFrame(self.centralwidget)
         self.line_3.setGeometry(QtCore.QRect(540, 60, 20, 341))
+        self.line_3.setLineWidth(3)
         self.line_3.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
@@ -266,6 +271,3 @@ class Ui_MainWindow(object):
         self.label_10.setText(_translate("MainWindow", "Ymax:"))
         self.label_11.setText(_translate("MainWindow", "Ymin:"))
         self.label_13.setText(_translate("MainWindow", "T. Divisiones: "))
-
-        self.txt_polinomio.setText(_translate("MainWindow", "1x^2+2"))
-

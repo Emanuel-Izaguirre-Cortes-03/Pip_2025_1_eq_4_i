@@ -9,5 +9,5 @@ A = n.array(a)
 print("\n")
 print(A)
 
-[F, C] = A.shape
+[F, C] = A.shape # orden
 print("Filas: ", F, "Columnas: ", C)

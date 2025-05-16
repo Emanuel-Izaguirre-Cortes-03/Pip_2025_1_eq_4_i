@@ -9,7 +9,7 @@ cadena = "math.pow(2,3)"
 a = eval(cadena)
 print(a)
 
-
+#polinomio al cuadrado... X al cuadrado
 valores_x = [i for i in range(-10, 10, 1)]
 #x = 5
 y = "x**2"

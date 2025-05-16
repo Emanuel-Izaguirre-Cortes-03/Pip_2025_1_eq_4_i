@@ -29,7 +29,7 @@ print(Y)
 
 print("\n\n\n")
 
-#X^+ = X^t (X*X^t)^-1
+#X^+ = X^t * (X*X^t)^-1
 
 Paso1 = X.dot(X.T)   #X*X^t
 Paso2 = n.linalg.inv(Paso1)   #(X*X^t)^-1
