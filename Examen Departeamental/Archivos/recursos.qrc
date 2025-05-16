@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="recursos">
+    <file>Facultad.png</file>
+    <file>logo_UAT.png</file>
+  </qresource>
+</RCC>
